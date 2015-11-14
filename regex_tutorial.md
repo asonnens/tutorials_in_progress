@@ -24,7 +24,7 @@ https://notepad-plus-plus.org/download/v6.8.6.html
 ### Getting started
 The first piece of data we will use is this list of species:
 
-``` 1. Drosophila melanogaster
+1. Drosophila melanogaster
 2. Drosophila simulans
 3. Drosophila sechellia
 4. Anopheles gambiae
