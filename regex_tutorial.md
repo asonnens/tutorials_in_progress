@@ -30,7 +30,7 @@ The first piece of data we will use is this list of species:
 4. Anopheles gambiae
 5. Aedes aegypti
 6. Tribolium castaneum
-7. Apis mellifera ``` 
+7. Apis mellifera
 
 Copy this list into your text editor.
 
