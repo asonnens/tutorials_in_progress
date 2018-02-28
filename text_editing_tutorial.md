@@ -214,9 +214,9 @@ grep ATGCG[ACGT] *.out
 ###Searching lines after a line
 Maybe we want just the first line of each alignment, as below:
 
-Query  1         ATGGATAGCAGCAGCGAACAGTTGAACGGATCGGGAGCTTTGAATTTCAAGCGGCCCAAG  60
-
-Sbjct  14154092  ATGGATAGCAGCAGCGAACAGTTGAACGGCTCGGGAGCTTTAAATTTCAAGCGGCCCAAG  14154033
+>Query  1         ATGGATAGCAGCAGCGAACAGTTGAACGGATCGGGAGCTTTGAATTTCAAGCGGCCCAAG  60
+>
+>Sbjct  14154092  ATGGATAGCAGCAGCGAACAGTTGAACGGCTCGGGAGCTTTAAATTTCAAGCGGCCCAAG  14154033
 
 However, this occupies three lines.
 
@@ -233,10 +233,59 @@ grep \-A2 "Query  1 " *.out
 
 ## Using sed to alter files in the command line
 
-Five sed commands
+Sed can be used to reformat files (double-space them, number them), or copy files with reformatting into a new file. However, it's most common use in my experience is for find and replace.
+
+Find-and-replace actions are going to generally be formatted like:
+
+>sed 's/pattern you are finding/what you're replacing/' filename(s)
+
+Let's replace every instance of "Query" with the name of the Query species, D.melanogaster
+
+````
+sed 's/Query/D.melanogaster/' *.out 
+````
+
+Currently, it's outputting the modified files to the command line. If we want to edit the files themselves, use the option -i
+````
+sed -i 's/Query/D.melanogaster/' *.out 
+````
+
+Be careful doing this, especially when you're modifying more than one file at a time. This cannot be reversed!
+
+Some of the sequence in the alignment is uppercase, and some is lowercase. Let's convert it all to uppercase. 
+
+```` 
+sed -i 's/.*/\U&/' *.out
+````
+the period tells it to match all characters, the * tells it it's matching any number of all characters
+
+the backslash U is replacing it with uppercase, and the ampersand is an indicator that it should be replacing ALL matches (essentially, it's making this replacement globally)
+
+
 ## Using awk to alter files in the command line
 
-Three awk commands
+
+Awk statements follow the pattern of:
+
+>awk 'pattern {action we're performing on the pattern}'
+
+If you don't include a pattern, it will match every line.
+
+This statement will number every line (including empty lines):
+
+>awk '{print FNR "\t" $0}' *.out
+
+We aren't matching a pattern, so it's doing every line. FNR is a special character, instructing it to print line numbers. The tab wildcard tells it to put a tab between the number and the line itself, and the $0 is instructing it to do this with the whole line.
+
+If we wanted to remove all duplicate lines (not really a problem with this file, but certainly with many datatables!) we would use this command:
+
+>awk '!a[$0]++' filename
+
+If we only wanted to remove duplicate _consecutive_ lines, we would use this command:
+
+>awk 'a != $0; {a = $0}' filename
+
+Awk is very idiomatic. When I need to use it, I usually just copy lines out of books or off of stackexchange. However, it can do basically anything to a file (including the things we've done so far with sed and grep), and much more besides. If you need to manipulate huge files on a regular basis, it is probably worth investing the time to learn how it works.
 #### Exercise 2
 
 Open the gff file "example.gff". gffs are flat text files containing genomic features, that can be opened in any text editor. 
