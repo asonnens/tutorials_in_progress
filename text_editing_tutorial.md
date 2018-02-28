@@ -68,14 +68,15 @@ Let's remove the numbers. Enter \d for search, and leave replace blank.
 
 Now your list should look like:
 
-```. Drosophila melanogaster
+```
+. Drosophila melanogaster
 . Drosophila simulans
 . Drosophila sechellia
 . Anopheles gambiae
 . Aedes aegypti
 . Tribolium castaneum
-. Apis mellifera```
-
+. Apis mellifera
+```
 
 Now lets get rid of the dots. See what happens if you search . and leave replace empty.
 
@@ -87,13 +88,15 @@ To remove the periods, search \. and replace with blank.
 
 Now your list should look like:
 
-```Drosophila melanogaster
+```
+ Drosophila melanogaster
  Drosophila simulans
  Drosophila sechellia
  Anopheles gambiae
  Aedes aegypti
  Tribolium castaneum
- Apis mellifera```
+ Apis mellifera
+```
 
 There's still an extra blank space before the genus names. What wild card will you search for to remove it?
 
@@ -119,7 +122,9 @@ Let's change the 'Genus species' nomenclature to 'G. species'.
 Search (\w)\w+ and replace with \1.
 
 Now your list should look like
-```D. melanogaster, D. simulans, D. sechellia, A. gambiae, A. aegypti, T. castaneum, A. mellifera```
+```
+D. melanogaster, D. simulans, D. sechellia, A. gambiae, A. aegypti, T. castaneum, A. mellifera
+```
 
 ### Invisible characters
 
