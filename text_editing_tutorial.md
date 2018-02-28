@@ -172,7 +172,7 @@ This will also work (regular expressions!):
 
 ````
 grep Kurt *.txt
-```
+````
 
 Now find everyone in the file who died of overdoses.
 
@@ -180,7 +180,7 @@ You can also use grep to count the total number of matches
 
 ````
 grep -c overdose twenty\_seven\_club.txt
-```
+````
 
 ###Inverting a match
 
@@ -188,7 +188,7 @@ Now lets use grep to count how many members of the 'twenty seven club' who died 
 
 ````
 grep -cv overdose twenty\_seven\_club.txt
-```
+````
 
 ###Searching across multiple files
 
