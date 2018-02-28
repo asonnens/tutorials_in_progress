@@ -4,26 +4,19 @@ Author: Anne Sonnenschein
 Created: 11/13/2015
 Updated: 2/27/2018
 
-This tutorial is designed to give a brief introduction to tools for text editing and file editing, using regular expressions and command line tools. Several exercises were modified from other sources-- primarily Practical Computing for Biologists by Haddock and Dunn-- which are referenced at the end of the file. 
+This tutorial is designed to give a brief introduction to text editing and file editing, using regular expressions and command line tools. Several exercises were modified from other sources-- primarily Practical Computing for Biologists by Haddock and Dunn-- which are referenced at the end of the file. 
 
 
 ## Overview
-Update this!
-
-Regular expressions (or regex) are a language for search and replace. They allow search for wild-cards: characters that can match more than one string. This can be especially useful for text editing, or converting large files from one format to another. Regular expressions are enabled in some text editors, and many programming languages (notably Python and Perl). In Unix they are implemented in tools such as grep and sed. The syntax is generally common across platforms.
-
-In this tutorial, you will learn syntax for simple regular expressions, and how to implement them in text editors. This will be extended to using regular expressions as a command line search tool (grep), and 
+In this tutorial, you will learn syntax for simple regular expressions, and how to implement them in text editors. This will be extended to using regular expressions as a command line search tool (grep), and using simple sed and awk commands to search, modify and reorganize files without opening them.
 ##Background
 ###What is Regex?
-Grep is the regular expression tool of the command line.
+Regular expressions (or regex) are a language for search and replace. They allow search for wild-cards: characters that can match more than one string. This can be especially useful for text editing, or converting large files from one format to another. Regular expressions are enabled in some text editors, and many programming languages (notably Python and Perl). In Unix they are implemented in tools such as grep and sed. The syntax is generally common across platforms.
 ###What is sed?
-Sed allows you to do search and replace over multiple files simultaneously
-It's also useful for editing files without opening them
-Simple sed commands can be done from the command line
-More complex commands are usually done with a shell wrapper
+Sed allows you to search and replace the contents of a file without opening it. It also enables searching and editing multiple files simultaneously. Simple sed commands are run from the command line, but it can also be incorporated into shell script for more complicated tasks.
 ###What is awk?
-Awk allows you to make complex alterations to a file's organization. It can re-order columns, convert columns to rows, and so on. 
-Like with sed, it can be invoked from the command line, but is usually incorporated into shell scripts.
+Awk can be used to make complex alterations to a file's organization (e.g. re-ordering columns, converting columns to rows). Like with sed, awk can be invoked from the command line, but is usually incorporated into shell scripts. It is very fast, and very powerful. Most things you would do with awk could be scripted using loops in python, but if you're modifying large files, there is **no comparison** when it comes to speed.
+
 ## Regex using text editors
 For this part of the activity you will need a text editor with regular expressions enabled. For the exercise at the end, you will need either Python or Perl.
 
@@ -94,7 +87,7 @@ To remove the periods, search \. and replace with blank.
 
 Now your list should look like:
 
- ``` Drosophila melanogaster
+``` Drosophila melanogaster
  Drosophila simulans
  Drosophila sechellia
  Anopheles gambiae
@@ -155,10 +148,6 @@ Replace: \1\t
 Now figure out how to remove all information on each line after the year (cause of death, age, etc.)
 
 
-
-
-
-###Do an exercise that requires matching a backslash!
 ![XKCD link 1](https://4.bp.blogspot.com/-cspkAL2F2bM/VsFgLh5ZYxI/AAAAAAAABgo/jRmPWLZasVA/w1200-h630-p-k-no-nu/xkcd.png)
 
 ** from https://xkcd.com/1638/
