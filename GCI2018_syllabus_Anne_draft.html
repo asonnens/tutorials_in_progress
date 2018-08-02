@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GCI2018_syllabus</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p style="text-align: center;">
+First year foundations: Grand Challenges in Science and Technology Syllabus
+</p>
+<hr />
+<h1>FFC100 Grand Challenges in Science and Technology</h1>
+<p><strong>Section:</strong><br/> 
+<strong>Instructor:</strong> <br/>
+<strong>Time and Place:</strong><br/> 
+<strong>Email:</strong><br/> 
+<strong>Phone:</strong><br/> 
+<strong>Office Hours:</strong><br/> </p>
+<h2>Course Overview</h2>
+<p>   	 
+Grand challenges are described as “ambitious goals on a national or global scale that capture the imagination and demand advances in innovation and breakthroughs in science and technology.” In this course, teams composed of approximately 4-5 students from disparate majors will coalesce around &quot;grand challenge&quot; projects, where they learn to leverage their growing individual (disciplinary) knowledge bases, skill sets, and problem-solving abilities to work towards solutions to these challenges. As the teams delve deeply into their projects, identify the current knowledge gaps, and then develop strategies to address those gaps, students will become more conversant in the languages of different scientific disciplines and the need to communicate with those outside the sciences. Students will develop a highly sophisticated appreciation for how team-based problem solving can have a maximum impact on a specific scientific pursuit. This course is the first step in the Grand Challenges Initiative, which is a required component of every undergraduate major in Schmid College, including biochemistry and molecular biology, biological sciences, chemistry, computer science, data analytics, environmental science and policy, joint degree programs in mathematics and civil engineering, physics and software engineering. Interested students from outside of Schmid College are encouraged to enroll, as all projects will engage in interdisciplinary approaches to these Grand Challenges. <em>3 Credits</em>.</p>
+<h2>Student Learning Outcomes</h2>
+<ul>
+<li>
+<strong>SLO 1:</strong> <strong>Use of the Literature</strong>
+<ul>
+<li>Students will be able to employ the scientific literature to discover and understand the knowledge gaps associated with grand challenges. Students will also research and assess the validity of any number of different sources of evidence, including the primary literature.</li>
+</ul>
+</li>
+<li>
+<strong>SLO 2:</strong> <strong>Critical Thinking</strong>
+<ul>
+<li>Students will be able to analyze scientific results, critically evaluate those data, and draw conclusions based on their assessments.</li>
+</ul>
+</li>
+<li>
+<strong>SLO 3:</strong> <strong>Conceptual Synthesis</strong>
+<ul>
+<li>Students will be able to combine disparate knowledge sets into a cohesive understanding of complex, multi-component problems.</li>
+</ul>
+</li>
+<li>
+<strong>SLO 4:</strong> <strong>Scientific Communication</strong>
+<ul>
+<li>Students will be able to communicate scientific concepts to a number of different audiences through oral, visual, and written means. </li>
+</ul>
+</li>
+</ul>
+<h2>Texts</h2>
+<p>Course readings will be supplied via Blackboard and may be supplemented by handouts in class at the instructor’s discretion.  Students are expected to complete the assigned reading prior to each class meeting time. </p>
+<h2>Course Itinerary</h2>
+<p>Initially, the course will focus on discussion of theories and philosophies of science, critical thinking, and problem-solving. During this time, students will be assembled into small teams, which will be expected to act as small companies or consultancies tasked by the “client” (the instructor) to solve a selected &quot;grand challenge&quot;.</p>
+<p>Over the course of the semester, teams will identify and assess evidence about the current state of their challenge in order to understand the roots and complexities of the problem(s), identify existing knowledge gaps, and eventually propose initial strategies to fill those knowledge gaps and solve the problem(s). Each team’s progress will be evaluated via project updates, literature presentations, and responses to those evaluations.</p>
+<p>The path and process followed by each team is going to be different, and teams are encouraged to be as <strong>open-minded and creative as possible</strong> as they pursue potential solutions to their challenge. However, it can be helpful to formalize those solutions within a framework that explicitly targets the key components needed to “make your case.” That is the purpose of creating a “grant proposal.”</p>
+<p>The semester will conclude with a final project designed to present the status of each team's “solutions” to the challenge, along with a discussion of proposed next steps.</p>
+<h2>Methods of Evaluation</h2>
+<p>Please note that students will be evaluated individually for their work within the team environment. 
+There are three written assignments and two oral presentations that will be graded. These combine to form 60% of the total grade. Writing assignments are limited to one page, 1&quot; margins, 12pt Arial, single-spaced and should be uploaded to Turnitin (via Blackboard) in MSWord format. The time and format of oral presentations will be specified for each activity well in advance of assessment.</p>
+<h5>Key Components:</h5>
+<ul>
+<li>Appropriate and extensive use and referencing of evidence (i.e. primary literature)</li>
+<li>Critical and novel analysis of sources of evidence</li>
+<li>Engaging, focused, and specific narrative to support arguments</li>
+<li>For written assignments, clear and concise writing that is grammatically/structurally correct. </li>
+<li>For oral assignments, clear, well-organized and engaging speaking. </li>
+</ul>
+<p>There is 1 graded final project. The project is worth 40% of the grade. The project will present the groups understanding of the grand challenge and present a potential or realized pathway towards solving the challenge. Additional details and examples will follow. </p>
+<h5>Key Components:</h5>
+<ul>
+<li>Authoritative source of knowledge regarding the challenge drawn from a critical, extensive and appropriate use of different sources of evidence (i.e. primary literature)</li>
+<li>Evidence of critical and integrative thinking across disciplines</li>
+<li>Evidence of team-based problem solving</li>
+<li>Clear vision of next steps/future approaches</li>
+<li>Ability to understand how the new ideas and solutions fit within the context of the problem </li>
+<li>Creative and innovative dissemination of findings</li>
+</ul>
+<h3>Grades</h3>
+<p><strong>This course is graded on a straight scale – you are not competing against anyone else for your grade.
+Grades are not negotiable commodities. However, mistakes can and do occur. If you feel an exam has been incorrectly scored, notify your me as soon as possible. There is a one week statute of limitations for each assessment.</strong></p>
+<pre><code>Points  Grade                               
+93-100    A           Assessment type                 Points possible   Due date
+90-92     A-          Individual writing assignment 1       10          Sept 24
+87-89     B+          Individual writing assignment 2       10          Oct  8
+83-86     B           Rewrites for assignments 1&amp;2          10          Oct  22
+80-82     B-          Oral presentation 1                   5           Oct  24
+77-79     C+          Proposal presentation                 10          Nov  7
+73-76     C           Proposals due                         10          Nov  14
+70-72     C-          Proposal revisions                    5           Nov  28
+60-69     D           Final project                         40          Dec  7
+&lt; 60      F           Total points:                         100
+</code></pre>
+
+<h2>Course Components and Detailed Itinerary</h2>
+<h4>Topic 1: Fantastic claims</h4>
+<p><strong>08/27/18:</strong> Discussion of some interesting challenge, list of grand challenges <br/> 
+<strong>08/29/18:</strong> Critical thinking assessment, concept mapping for ebola article, break into intial GC interest area <br/> 
+09/03/18: <em>University holiday- No class</em><br/> 
+<strong>09/05/18:</strong> Discuss Theranos article; how we know what we know. Brainstorm with group. <br/> 
+09/07/18: <em>Add drop deadline</em> <br/> </p>
+<h4>Topic 2: Reading and writing about science</h4>
+<p><strong>09/10/18:</strong> Library visit- academic search engines, and peer review <br/> 
+<strong>09/12/18:</strong> Discuss Spinach article, importance of checking sources. Begin finding sources for assignment 1 <br/>
+<strong>09/17/18:</strong> Citating sources, paraphrasing, organizing sources with Mendeley <br/>
+<strong>09/19/18:</strong> Strategies for science communication <br/>
+<strong>09/24/18:</strong> Break into new GC subgroups. <strong>Writing assignment 1 due</strong> <br/>
+<strong>09/26/18:</strong> Group discussion interesting challenge (Higgs?) Brainstorm for assignment 2 <br/></p>
+<h4>Topic 3: Science communication and breakthroughs</h4>
+<p><strong>10/01/18:</strong> Team work day, and break into two teams for climate change debate <br/>
+<strong>10/03/18:</strong> Climate change classroom debate, lab safety training <br/>
+<strong>10/08/18:</strong> Assemble into final GCI groups <strong>Writing assignment 2 due</strong><br/>
+<strong>10/10/18:</strong> Concept mapping, teamwork activity <br/>
+<strong>10/15/18:</strong> Science communication- Rebecca Skloot discussion <br/>
+<strong>10/17/18:</strong> Visual images about challenge, prep for presentation<br/>
+<strong>10/22/18:</strong> Prep for presentation <strong>Rewrites for writing assignments due</strong> <br/>
+<strong>10/24/18:</strong> <strong>Oral presentation 1 on knowledge gaps</strong> <br/>
+10/26/18: <em>GCI networking lunch</em>  <br/></p>
+<h4>Topic 4: Realizing the project</h4>
+<p><strong>10/29/18:</strong> Team work day-- begin working on grant proposal using generative thinking <br/>
+<strong>10/31/18:</strong> Discuss something cool, team work on proposal <br/>
+<strong>11/05/18:</strong> Team work on proposal, presentation <br/>
+<strong>11/07/18:</strong> <strong>Oral presentation 2 on project proposal</strong> <br/>
+<strong>11/12/18:</strong> Finalize project proposals <br/>
+<strong>11/14/18:</strong> <strong>Project proposals due</strong> Something fun in class <br/>
+11/19/18: <em>Thanksgiving no class</em> <br/>
+11/21/18: <em>Thanksgiving no class</em> <br/>
+<strong>11/26/18:</strong> Work on final project <br/>
+<strong>11/28/18:</strong> Work on final project,** proposal revisions due **<br/>
+<strong>12/03/18:</strong> Critical thinking assessment, course evaluations <br/>
+<strong>12/05/18:</strong> Work on final project <br/>
+<strong>12/07/18:</strong> GCI showcase <strong>FINAL PROJECTS DUE AT 5PM</strong><br/>
+12/10/18: <em>Final exams</em> <br/></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
